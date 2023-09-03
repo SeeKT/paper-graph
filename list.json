@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Anomaly Detection Dataset for Industrial Control Systems",
+        "link": "https://arxiv.org/abs/2305.09678",
+        "next": [2, 3, 4]
+    },
+    {
+        "id": 2,
+        "title": "On the Generation of Anomaly Detection Datasets in Industrial Control Systems",
+        "link": "https://ieeexplore.ieee.org/document/8926471",
+        "next": []
+    },
+    {
+        "id": 3,
+        "title": "ICSSIM - A framework for building industrial control systems security testbeds",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0166361523000568",
+        "next": []
+    },
+    {
+        "id": 4,
+        "title": "SWaT: a water treatment testbed for research and training on ICS security",
+        "link": "https://ieeexplore.ieee.org/document/7469060",
+        "next": []
+    }
+]
