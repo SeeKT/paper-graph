@@ -14,5 +14,6 @@ network.on("click",function(params){
     }
     var param = nodes.get(nodeId);
     console.log(param)
-    document.getElementById("title").innerHTML = "<a href=" + param["link"] + ">" + param["title"] + "</a>";
+    document.getElementById("title").innerHTML = "Paper: " + "<a href=" + param["link"] + ">" + param["title"] + "</a>";
+    document.getElementById("group_and_status").innerHTML = "Group: " + param["group"] + ", " + "Status: " + param["status"];
 });

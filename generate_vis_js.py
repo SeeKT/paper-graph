@@ -50,10 +50,21 @@ def _get_graph(d):
     """
     nodes = []; edges = []
     for data in d:
-        node = "{id: " + str(data['id']) \
-            + ", label: '" + str(data['id']) \
-                + "', title: '" + data['title'] + "'" \
-                    + ", link: '" + data['link'] + "'" + '}'
+        if data['status'] == 'read':
+            node = "{id: " + str(data['id']) \
+                + ", label: '" + str(data['id']) \
+                    + "', group: '" + data['group'] \
+                        + "', status: '" + data['status'] \
+                            + "', shape: 'box', value: 20, scaling: { label: {enabled: true} }" \
+                                + ", title: '" + data['title'] + "'" \
+                                    + ", link: '" + data['link'] + "'" + '}'
+        else:
+            node = "{id: " + str(data['id']) \
+                + ", label: '" + str(data['id']) \
+                    + "', group: '" + data['group'] \
+                        + "', status: '" + data['status'] \
+                            + "', title: '" + data['title'] + "'" \
+                                + ", link: '" + data['link'] + "'" + '}'
         nodes.append(node)
         for n in data['next']:
             edge= "{from: " + str(data['id']) \
