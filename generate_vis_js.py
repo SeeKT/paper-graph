@@ -77,9 +77,9 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description='generate JavaScript Code'
     )
-    parser.add_argument('-l', '--list', help='JSON file (list of paper)', required=True)
-    parser.add_argument('-o', '--out', help='Output JavaScript File', required=True)
-    parser.add_argument('-t', '--template', help='Template JavaScript File', required=True)
+    parser.add_argument('-l', '--list', help='JSON file (list of paper)', default='./list.json')
+    parser.add_argument('-o', '--out', help='Output JavaScript File', default='./out/script.js')
+    parser.add_argument('-t', '--template', help='Template JavaScript File', default='./template.js')
     return parser.parse_args()
 
 def main():
